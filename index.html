@@ -2,13 +2,23 @@
 <html lang="fi">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <ul class="header">
-            <li>Settii</li>
-        </ul>
-        <div class="main">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        <div class="nav col-12">
+            <div class="navmenu">
+                <span id="menu" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        <div class="name">
             <h1>Teemu Markkanen</h1>
         </div>
         
