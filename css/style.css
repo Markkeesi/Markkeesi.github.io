@@ -3,7 +3,7 @@
     color: white;
 }
 
-html, body {
+html {
     font-family: "ui-rounded", sans-serif;
     background: url("../img/greenthings2.jpg") no-repeat;
     background-size: cover;
@@ -40,65 +40,38 @@ html, body {
     }
 }
 
-.nav {
-    background-color: rgba(88, 252, 0, 0.86);
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: larger;
 }
 
-.navmenu {
-    text-align: center;
+li {
     float: left;
-    transition: margin-left .5s;
-    padding: 10px;
 }
 
-#menu {
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+li a {
     display: block;
-    transition: 0.3s;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-  
-.sidenav a:hover {
-    color: #f1f1f1;
+
+li a:hover {
+    background-color: #0a6200;
+    border-radius: 15px;
 }
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+.cv{
+    float: right;
 }
 
 .name{
     text-align: center;
-    font-size: larger;
-    padding: 100px;
 }
 
 
