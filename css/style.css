@@ -45,12 +45,14 @@ html {
 
 .header {
     list-style-type: none;
+    top: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-weight: bold;
     font-size: larger;
-    
+    position: fixed;
+    width: 100%;
 }
 
 .header li {
@@ -84,6 +86,7 @@ html {
 
 .hamburger-icon {
     display: none;
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -97,7 +100,7 @@ html {
 @media screen and (max-width: 768px) {
     .header.responsive {position: relative;}
     .header.responsive .hamburger-icon {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
     }
@@ -111,17 +114,20 @@ html {
         float: none;
         display: block !important;
         text-align: center;
+        position: fixed;
     }
     .header.responsive .nav-items{
-        margin-top: 4rem;
+        margin-top: 3rem;
+        position: fixed;
+        width: 100%;
     }
 }
 
 .nav-left {
     list-style-type: none;
     float: none;
-    position: sticky;
-    
+    position: fixed;
+    height: 100%;
 }
 
 .social {
@@ -157,25 +163,23 @@ html {
 
 .name{
     text-align: center;
+    font-size: 3em;
+}
+
+.intro {
     font-size: 2em;
-}
-
-.coming {
     text-align: center;
-    color: white;
-    font-size: 5em;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    animation-name: soon;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes soon {
-    0% {color: greenyellow;}
-    25% {color: aqua;}
-    50% {color: deeppink;}
-    75% {color: mediumspringgreen;}
-    100% {color: yellow;}
+.active{
+    background-color: #0a6200b1;
+    border-radius: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: limegreen;
 }
 
 

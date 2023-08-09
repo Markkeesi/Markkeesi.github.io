@@ -3,15 +3,27 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/projectsStyle.css">
     </head>
     <body>
-        <ul class="header col-12">
-            <li><a href="../index.html"><img class="navicon" src="../img/teeamma.png" alt=""></a></li>
-            <li><a class="link" href="">About</a></li>
-            <li><a class="link" href="">Projects</a></li>
-            <li><a class="link" href="">Dog gallery</a></li>
-            <!-- <li class="cv"><a href="">Resume</a></li> COMING SOON -->
+        <ul class="header" id="header">
+            <li class="main-logo">
+                <a href="../index.html">
+                    <img class="homeicon" src="../img/teeamma.png" alt="">
+                </a>
+            </li>
+            <li class="hamburger-icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <div class="nav-items">
+                <li class="link"><a href="about.html">ABOUT</a></li>
+                <li class="link active"><a href="projects.html">PROJECTS</a></li>
+                <li class="link"><a href="dog_gallery.html">DOG GALLERY</a></li>
+            </div>
         </ul>
         <div class="row col-12 main">
             <div class="col-05">
@@ -32,5 +44,6 @@
                 <h1 class="coming">COMING SOON</h1>
             </div>
         </div>
+        
     </body>
 </html>
