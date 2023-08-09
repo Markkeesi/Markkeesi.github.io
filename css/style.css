@@ -1,10 +1,11 @@
 *{
     box-sizing: border-box;
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 html {
-    font-family: "garamond", serif;
+    font-family: "garamond", sans-serif;
     background: url("../img/greenthings2.jpg") no-repeat;
     background-size: cover;
 }
@@ -180,6 +181,43 @@ html {
     text-align: center;
     padding: 15px;
     background-color: limegreen;
+    width: 100%;
+}
+
+.heart {
+    display: inline-block;
+    animation: beat 2s infinite;
+    transform-origin: center;
+}
+
+@keyframes beat{
+	0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.4);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+    75% {
+        transform: scale(1.6);
+    }
+}
+
+.thumb {
+    display: inline-block;
+    animation: thumbsUP 2s infinite;
+}
+
+@keyframes thumbsUP {
+    0%, 100% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-45deg);
+    }
 }
 
 
