@@ -3,18 +3,29 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <ul class="header">
-            <li><a href="index.html"><img class="navicon" src="img/teeamma.png" alt=""></a></li>
-            <li><a class="link" href="">About</a></li>
-            <li><a class="link" href="sites/projects.html">Projects</a></li>
-            <li><a class="link" href="">Dog gallery</a></li>
-            <li class="cv"><a href="">Resume</a></li>
+        <ul class="header" id="header">
+            <li class="main-logo">
+                <a href="index.html">
+                    <img class="homeicon" src="img/teeamma.png" alt="">
+                </a>
+            </li>
+            <li class="hamburger-icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <div class="nav-items">
+                <li class="link"><a href="">ABOUT</a></li>
+                <li class="link"><a href="sites/projects.html">PROJECTS</a></li>
+                <li class="link"><a href="">DOG GALLERY</a></li>
+            </div>
         </ul>
-        <div class="row">
-            <div class="col-1">
+        <div class="row col-12 main">
+            <div class="col-05">
                 <div class=" nav-left">
                     <div class="social">
                         <a href="https://www.linkedin.com/in/teemu-markkanen-753182253/">
@@ -28,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <div class="name col-10">
-                <h1>Teemu Markkanen</h1>
+            <div class="name col-11">
+                <h1>Hi! I'm Teemu Markkanen</h1>
             </div>
         </div>
     </body>

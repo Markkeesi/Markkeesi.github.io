@@ -4,7 +4,7 @@
 }
 
 html {
-    font-family: "ui-rounded", sans-serif;
+    font-family: "garamond", serif;
     background: url("../img/greenthings2.jpg") no-repeat;
     background-size: cover;
 }
@@ -38,6 +38,9 @@ html {
     [class*="col-"] {
         width: 100%;
     }
+    [class*="nav-left"] {
+        display: none;
+    }
 }
 
 .header {
@@ -47,9 +50,10 @@ html {
     overflow: hidden;
     font-weight: bold;
     font-size: larger;
+    
 }
 
-.header li:not(.cv) {
+.header li {
     float: left;
 }
 
@@ -66,23 +70,51 @@ html {
     border-radius: 15px;
 }
 
-.navicon {
+.homeicon {
     width: 70px;
     height: auto;
     border-radius: 15px;
-    margin-left: 10px;
 }
+
 
 .link {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.cv{
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-    
+.hamburger-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header li:not(.main-logo) {display: none;}
+    .header li.hamburger-icon {
+      float: right;
+      display: block !important;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .header.responsive {position: relative;}
+    .header.responsive .hamburger-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .header.responsive .link {
+      float: none;
+      display: block !important;
+      align-items: center;
+      margin-left: 0;
+    }
+    .header.responsive .homeicon {
+        float: none;
+        display: block !important;
+        text-align: center;
+    }
+    .header.responsive .nav-items{
+        margin-top: 4rem;
+    }
 }
 
 .nav-left {
@@ -119,8 +151,13 @@ html {
     transform: scale(1.5);
 }
 
+.main {
+    padding-top: 100px;
+}
+
 .name{
     text-align: center;
+    font-size: 2em;
 }
 
 .coming {
