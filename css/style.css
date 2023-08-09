@@ -17,7 +17,7 @@ html {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 10px;
 }
 
 .col-05 {width: 4.5%;}
@@ -40,7 +40,7 @@ html {
     }
 }
 
-ul {
+.header {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -49,11 +49,11 @@ ul {
     font-size: larger;
 }
 
-li {
+.header li:not(.cv) {
     float: left;
 }
 
-li a {
+.header li a {
     display: block;
     color: white;
     text-align: center;
@@ -61,17 +61,84 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #0a6200;
+.header li a:hover {
+    background-color: #0a6200b1;
     border-radius: 15px;
+}
+
+.navicon {
+    width: 70px;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.link {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .cv{
     float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.nav-left {
+    list-style-type: none;
+    float: none;
+    position: sticky;
+    
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.giticon {
+    width: 3em;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.giticon:hover {
+    transform: scale(1.5);
+}
+
+.linkicon {
+    width: 3em;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.linkicon:hover {
+    transform: scale(1.5);
 }
 
 .name{
     text-align: center;
+}
+
+.coming {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    animation-name: soon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes soon {
+    0% {color: greenyellow;}
+    25% {color: aqua;}
+    50% {color: deeppink;}
+    75% {color: mediumspringgreen;}
+    100% {color: yellow;}
 }
 
 
