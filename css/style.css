@@ -2,10 +2,17 @@
     box-sizing: border-box;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-family: "garamond", sans-serif;
+    min-width: 100%;
+}
+
+body {
+
     background: url("../img/greenthings2.jpg") no-repeat;
     background-size: cover;
 }
@@ -39,7 +46,7 @@ html {
     [class*="col-"] {
         width: 100%;
     }
-    [class*="nav-left"] {
+    [class*="navcont"] {
         display: none;
     }
 }
@@ -49,11 +56,11 @@ html {
     top: 0;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-weight: bold;
     font-size: larger;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header li {
@@ -73,37 +80,51 @@ html {
     border-radius: 15px;
 }
 
+.main-logo {
+    display: inline;
+    float: left;
+    padding: 14px 16px;
+}
+
 .homeicon {
     width: 70px;
     height: auto;
     border-radius: 15px;
 }
 
-
 .link {
     margin-top: 10px;
     margin-left: 10px;
+    background-color: black;
 }
 
 .hamburger-icon {
     display: none;
     font-size: 2.5rem;
+    background-color: black;
 }
 
 @media screen and (max-width: 768px) {
-    .header li:not(.main-logo) {display: none;}
-    .header li.hamburger-icon {
-      float: right;
-      display: block !important;
+    .header li:not(.main-logo) {
+        display: none;
     }
+    .header li.hamburger-icon {
+        float: right;
+        display: block !important;
+    }
+    .header li a {
+        padding: 10px 12px;
+    }
+
 }
   
 @media screen and (max-width: 768px) {
-    .header.responsive {position: relative;}
+    .header.responsive {
+        position: relative;
+    }
     .header.responsive .hamburger-icon {
       position: fixed;
       right: 0;
-      top: 0;
     }
     .header.responsive .link {
       float: none;
@@ -114,13 +135,14 @@ html {
     .header.responsive .homeicon {
         float: none;
         display: block !important;
-        text-align: center;
         position: fixed;
     }
     .header.responsive .nav-items{
-        margin-top: 3rem;
+        margin-top: 4rem;
         position: fixed;
         width: 100%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 15px;
     }
 }
 
@@ -159,12 +181,13 @@ html {
 }
 
 .main {
-    padding-top: 100px;
+    padding-top: 6rem;
 }
 
 .name{
     text-align: center;
     font-size: 3em;
+    padding: 15px;
 }
 
 .intro {
@@ -175,6 +198,29 @@ html {
 .active{
     background-color: #0a6200b1;
     border-radius: 15px;
+}
+
+.miniSocial {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .miniSocial {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .miniGit {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .minilink {
+        display: inline-block;
+        margin: 10px;
+    }
 }
 
 .footer {
