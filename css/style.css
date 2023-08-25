@@ -61,13 +61,14 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: black;
 }
 
 .header li {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
-    background-color: black;
+    
 }
 
 .header li a {
@@ -80,6 +81,7 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     background-color: black;
+   
 }
 
 .header li a:hover {

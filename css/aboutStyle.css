@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1100px) {
     .infoContainer {
         padding: 1em;
         text-align: center;
@@ -9,18 +9,95 @@
     }
     
     .infoIntro {
-        padding-left: 10em;
-        padding-right: 10em;
-        font-size: 1.5em;
+        padding-left: 5em;
+        padding-right: 5em;
+        font-size: 1.8em;
         text-align: start;
+        background-color: rgba(0, 0, 0, 0.534);
     }
     
     .infoIntro p {
         padding-bottom: 1em;
     }
+
+    .workE {
+        padding-bottom: 15px;
+    }
+
+    .workIcons {
+        height: 1.5rem;
+        width: auto;
+        margin-top: 5px;
+    }
+
+    #salama {
+        animation: beating 7s infinite;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #blueS {
+        animation: beating 7s infinite 1s ;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #blueL {
+        animation: beating 7s infinite 2s;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #redT {
+        animation: beating 7s infinite 3s;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #purpleE {
+        animation: beating 7s infinite 4s;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #redP {
+        animation: beating 7s infinite 5s;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #greenP {
+        animation: beating 7s infinite 6s;
+        transform-origin: center;
+        animation-play-state: paused;
+    }
+
+    #workTitle {
+        padding-left: 5px;
+        display: inline;
+    }
+
+    #workP {
+        padding-left: 1.3em;
+        font-size: 0.9em;
+    }
+
+    @keyframes beating{
+        10% {
+            transform: scale(1);
+        }
+        20% {
+            transform: scale(1.7);
+        }
+        30%{
+            transform: scale(1);
+        }
+    }
+    
+
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1039px) {
+@media only screen and (min-width: 769px) and (max-width: 1099.99px) {
     .infoContainer {
         padding: 1em;
         text-align: center;
@@ -30,9 +107,9 @@
         font-size: 2.5em
     }
     .infoIntro {
-        padding-left: 5em;
-        padding-right: 5em;
-        font-size: 1.5em;
+        padding-left: 4em;
+        padding-right: 4em;
+        font-size: 1.8em;
         text-align: start;
     }
 
@@ -51,8 +128,8 @@
         font-size: 2.5em
     }
     .infoIntro {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1em;
+        padding-right: 1em;
         font-size: 1.5em;
         text-align: start;
     }
