@@ -13,7 +13,7 @@
         padding-right: 5em;
         font-size: 1.8em;
         text-align: start;
-        background-color: rgba(0, 0, 0, 0.534);
+        background-color: rgba(0, 0, 0, 0.301);
     }
     
     .infoIntro p {
@@ -27,71 +27,15 @@
     .workIcons {
         height: 1.5rem;
         width: auto;
-        margin-top: 5px;
-    }
-
-    #salama {
-        animation: beating 7s infinite;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #blueS {
-        animation: beating 7s infinite 1s ;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #blueL {
-        animation: beating 7s infinite 2s;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #redT {
-        animation: beating 7s infinite 3s;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #purpleE {
-        animation: beating 7s infinite 4s;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #redP {
-        animation: beating 7s infinite 5s;
-        transform-origin: center;
-        animation-play-state: paused;
-    }
-
-    #greenP {
-        animation: beating 7s infinite 6s;
-        transform-origin: center;
-        animation-play-state: paused;
     }
 
     #workTitle {
-        padding-left: 5px;
         display: inline;
     }
 
     #workP {
         padding-left: 1.3em;
         font-size: 0.9em;
-    }
-
-    @keyframes beating{
-        10% {
-            transform: scale(1);
-        }
-        20% {
-            transform: scale(1.7);
-        }
-        30%{
-            transform: scale(1);
-        }
     }
     
 
@@ -116,6 +60,24 @@
     .infoIntro p {
         padding-bottom: 1em;
     }
+
+    .workE {
+        padding-bottom: 15px;
+    }
+
+    .workIcons {
+        height: 1.5rem;
+        width: auto;
+    }
+
+    #workTitle {
+        display: inline;
+    }
+
+    #workP {
+        padding-left: 1.3em;
+        font-size: 0.9em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,4 +99,21 @@
         padding-bottom: 1em;
     }
 
+    .workE {
+        padding-bottom: 15px;
+    }
+
+    .workIcons {
+        height: 1.5rem;
+        width: auto;
+    }
+
+    #workTitle {
+        display: inline;
+    }
+
+    #workP {
+        padding-left: 1.3em;
+        font-size: 0.9em;
+    }
 }
