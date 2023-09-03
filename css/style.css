@@ -240,7 +240,7 @@ p {
 .name{
     text-align: center;
     font-size: 3em;
-    padding: 15px;
+    padding: 25px;
 }
 
 .intro {
@@ -314,8 +314,12 @@ p {
         transform: rotateZ(0deg);
     }
 
-    50% {
+    33% {
         transform: rotateZ(-45deg);
+    }
+
+    66% {
+        transform: rotateZ(45deg);
     }
 }
 
