@@ -291,6 +291,12 @@ p {
     height: 485px;
     object-fit: cover;
     border-radius: 10px;
+    border-style: initial;
+    transition: 0.5s;
+}
+
+.picture img:hover {
+    transform: scale(1.05);
 }
 
 .active{
