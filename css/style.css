@@ -284,6 +284,11 @@ p {
     padding: 25px;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.picture {
+    padding: 10px;
 }
 
 .picture img {
@@ -324,6 +329,15 @@ p {
     .minilink {
         display: inline-block;
         margin: 10px;
+    }
+
+    .picture {
+        padding: 10px;
+    }
+
+    .picture img {
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
