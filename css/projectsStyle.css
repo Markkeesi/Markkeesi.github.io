@@ -16,7 +16,21 @@
     100% {color: yellow;}
 }
 
-.muistipeli {
-    font-size: 2em;
-    text-align: center;
+.thumbnail {
+    justify-content: center;
+    padding: 15px;
+}
+
+.mfg {
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-width: 5px;
+    border-style: double;
+}
+
+@media only screen and (max-width: 768px) {
+    .mfg {
+        width: 100%;
+        height: auto;
+    }
 }
