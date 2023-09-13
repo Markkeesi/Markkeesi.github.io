@@ -87,7 +87,7 @@ p {
     .col-s-12 {width: 100%;}
 }
 
-.header {
+.page-header {
     list-style-type: none;
     top: 0;
     margin: 0;
@@ -100,14 +100,14 @@ p {
     background-color: black;
 }
 
-.header li {
+.page-header li {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
     
 }
 
-.header li a {
+.page-header li a {
     display: block;
     color: white;
     text-align: center;
@@ -120,7 +120,7 @@ p {
    
 }
 
-.header li a:hover {
+.page-header li a:hover {
     background-color: #0a6200;
     border-radius: 15px;
 }
@@ -154,7 +154,7 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-    .header li {
+    .page-header li {
         display: none;
     }
     .menuIcon {
