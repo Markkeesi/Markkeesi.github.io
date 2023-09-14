@@ -1,0 +1,21 @@
+.coming {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    animation-name: soon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes soon {
+    0% {color: greenyellow;}
+    25% {color: aqua;}
+    50% {color: deeppink;}
+    75% {color: mediumspringgreen;}
+    100% {color: yellow;}
+}
+
+.info {
+    text-align: center;
+}
