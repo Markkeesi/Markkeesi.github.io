@@ -26,15 +26,15 @@ p {
 }
 
 .flex-25 {
-
+    flex: 25%;
 }
 
 .flex-50 {
-    
+    flex: 50%;
 }
 
 .flex-100 {
-    
+    flex: 100%;
 }
 
 .row::after {

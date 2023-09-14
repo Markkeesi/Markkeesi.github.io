@@ -26,6 +26,11 @@
     border-color: rgb(255, 255, 255);
     border-width: 5px;
     border-style: double;
+    transition: 0.5s;
+}
+
+.mfg:hover {
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
