@@ -13,7 +13,6 @@
         padding-right: 5em;
         font-size: 1.8em;
         text-align: start;
-        background-color: rgba(0, 0, 0, 0.301);
     }
     
     .infoIntro p {
@@ -38,6 +37,27 @@
         font-size: 0.9em;
     }
     
+    .skills {
+        padding-bottom: 15px;
+    }
+
+    .skills h3 {
+        padding-bottom: 15px;
+    }
+
+    .skills ul {
+        padding-left: 30px;
+    }
+
+    .skills li {
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: black;
+    }
+
+    .small-list {
+        font-size: 0.8em;
+    }
 
 }
 
@@ -78,6 +98,24 @@
         padding-left: 1.3em;
         font-size: 0.9em;
     }
+
+    .skills {
+        padding-bottom: 15px;
+    }
+
+    .skills h3 {
+        padding-bottom: 15px;
+    }
+
+    .skills ul {
+        padding-left: 30px;
+    }
+
+    .skills li {
+        padding-left: 10px;
+        background-color: rgba(0, 0, 0, 0.301);
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (max-width: 768.99px) {
@@ -113,7 +151,25 @@
     }
 
     #workP {
-        padding-left: 1.3em;
+        padding-left: 20px;
         font-size: 0.9em;
+    }
+
+    .skills {
+        padding-bottom: 15px;
+    }
+
+    .skills h3 {
+        padding-bottom: 15px;
+    }
+
+    .skills ul {
+        padding-left: 30px;
+    }
+
+    .skills li {
+        padding-left: 10px;
+        background-color: rgba(0, 0, 0, 0.301);
+        border-radius: 5px;
     }
 }
